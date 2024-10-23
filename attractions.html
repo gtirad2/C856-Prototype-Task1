@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Taniti Tourism - Attractions</title>
+  <style>
+    /* Page-Specific Inline CSS for Visual Layout Elements Only */
+    .img-placeholder {
+      display: block;
+      width: 100%;
+      height: 180px;
+      /*background-color: #e0e0e0;*/
+      text-align: center;
+      line-height: 180px;
+      color: #555;
+      font-size: 20px;
+      /*border: 1px dashed #aaa;*/
+    }
+    .main-content {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      margin: 40px 0;
+      padding: 20px;
+    }
+    .attractions {
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    .highlight-card {
+      padding: 15px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+      min-height: 370px;
+      width:200px;
+      margin-bottom: 20px;
+    }
+    .booking-widget {
+      flex: 1;
+      background-color: #fafafa;
+      padding: 28px;
+      border: 1px solid #d1d1d1;
+      border-radius: 4px;
+      max-height: 498px;
+      overflow-y: auto;
+      max-width: 300px;
+    }
+    .booking-widget h3 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #333;
+    }
+    .booking-widget form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .booking-widget label {
+      font-weight: bold;
+      color: #333;
+    }
+    .booking-widget input, .booking-widget select, .booking-widget textarea {
+      padding: 8px;
+      border: 1px solid #bbb;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    .booking-widget button {
+      padding: 10px;
+      background-color: #0073e6;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .cta-section {
+      text-align: center;
+      padding: 20px;
+      background-color: #f0f0f0;
+
+    }
+    .footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      background-color: #e8e8e8;
+      border-top: 1px solid #ccc;
+    }
+    .social-links {
+      margin-top: 10px;
+    }
+    .footer a, .social-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #555;
+    }
+  </style>
+  <link rel="stylesheet" href="colorscheme_override.css">
+  <link rel="stylesheet" href="images.css">
+</head>
+<body>
+<div class="container">
+  <!-- Header -->
+  <div class="header hero attractions-page-hero" style="padding: 40px 20px; text-align: center;">
+    <h1>Discover Taniti's Attractions</h1>
+    <img src="imgs/logo.png" alt="Taniti Tourism Logo" class="logo logo-circle">
+  </div>
+
+  <!-- Navigation -->
+  <div class="nav" style="text-align: center; padding: 15px;">
+    <a href="index.html">Home</a> |
+    <a class="currentPage" href="attractions.html">Attractions</a> |
+    <a href="book.html">Bookings</a> |
+    <a href="transport.html">Transportation</a> |
+    <a href="about.html">About & Contact</a>
+  </div>
+
+  <!-- Introduction Section -->
+  <div class="intro-section" style="padding: 20px; text-align: center;">
+    <p>From breathtaking landscapes to cultural experiences, Taniti offers a variety of attractions that cater to every type of traveler. Explore our featured attractions below to plan your dream vacation.</p>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Attractions List -->
+    <div class="feature-highlights attractions">
+
+      <div class="highlight-card attraction-card attraction1">
+        <div class="img-placeholder"></div>
+        <h3>Merriton Landing</h3>
+        <p>Enjoy the vibrant local culture, waterfront activities, and art galleries.</p>
+      </div>
+      <div class="highlight-card attraction-card attraction2">
+        <div class="img-placeholder"></div>
+        <h3>Rainforest Zipline</h3>
+        <p>Thrilling zipline adventures through Taniti's lush rainforests.</p>
+      </div>
+      <div class="highlight-card attraction-card attraction3">
+        <div class="img-placeholder"></div>
+        <h3>Historical Museum</h3>
+        <p>Learn about Taniti's culture, people, and history through curated exhibits.</p>
+      </div>
+    </div>
+
+    <!-- Booking Widget -->
+    <div class="booking-widget">
+      <h3>Book Your Experience</h3>
+      <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+        <label for="attraction">Select Attraction:</label>
+        <select id="attraction" name="attraction">
+          <option value="yellow-leaf-bay">Yellow Leaf Bay</option>
+          <option value="volcano-tours">Volcano Tours</option>
+          <option value="merriton-landing">Merriton Landing</option>
+          <option value="rainforest-zipline">Rainforest Zipline</option>
+          <option value="historical-museum">Historical Museum</option>
+        </select>
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="message">Additional Requests:</label>
+        <textarea id="message" name="message" rows="3" placeholder="Any special requests?"></textarea>
+
+        <button type="submit">Submit Booking Request</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2024 Taniti Tourism. All Rights Reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    <div class="social-links">
+      <a href="#" class="social-icon">Facebook</a> |
+      <a href="#" class="social-icon">Twitter</a> |
+      <a href="#" class="social-icon">Instagram</a> |
+      <a href="#" class="social-icon">YouTube</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

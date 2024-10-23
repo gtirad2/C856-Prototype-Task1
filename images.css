@@ -1,0 +1,125 @@
+body {
+    background-color: #fff;
+    background-image: url("imgs/tropical-5074304_1280alt.png");
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.hero{background-position: center;
+    background-size: cover;}
+.home-page-hero{
+background-image: url("imgs/beach-1761410_1280.jpg");
+}
+.transport-page-hero{
+    background-image: url("imgs/car-6603726_1280.jpg");
+}
+.attractions-page-hero {
+    background-image: url("imgs/beach-1867026_1280.jpg");
+}
+.bookings-page-hero{
+    background-image: url("imgs/passport-2714675_1280.jpg");
+}
+.about-page-hero{
+    background-image: url("imgs/boat-8002718_1280.jpg");
+}
+
+.highlight-card-attractions,
+.highlight-card-booking,
+.highlight-card-travel {
+    background: linear-gradient(to top, rgba(0, 0, 0, .9) 30%, rgba(0, 0, 0, 0) 80%),
+    url("imgs/placeholder.jpg"); /* Placeholder to show the usage */
+    background-size: cover;
+    background-blend-mode: soft-light; /* Blend the gradient and the image */
+    mix-blend-mode: multiply; /* Blend the card with the parent container */
+}
+
+/* Set specific images for each card */
+.highlight-card-attractions {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .9) 30%, rgba(0, 0, 0, 0) 80%),
+    url("imgs/beach-1867026_1280.jpg");
+}
+
+.highlight-card-booking {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .9) 30%, rgba(0, 0, 0, 0) 80%),
+    url("imgs/passport-2714675_1280.jpg"); /* Convert to .jpg */
+}
+
+.highlight-card-travel {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .9) 30%, rgba(0, 0, 0, 0) 80%),
+    url("imgs/car-6603726_1280.jpg");
+}
+
+
+.feature-image-placeholder, .cta-section{
+    background-image: url("imgs/ai-generated-9126644_1280.jpg");
+    background-position: center;
+    background-size: cover;}
+
+.logo {
+    width: 280px; /* Smaller size to keep central focus balanced */
+    height: auto;
+    /* position: absolute; */
+    top: 36px;
+    left: 50%;
+    /* transform: translateX(-50%); */ /* Center the logo horizontally */
+    /* z-index: 5; */ /* Ensure logo appears above other content */
+
+}
+
+.logo-circle {
+    border-radius: 50%; /* Circle style */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for more emphasis */
+}
+.attraction1,.attraction2,.attraction3{
+    background: linear-gradient(to top, rgba(0, 0, 0, .9) 30%, rgba(0, 0, 0, 0) 80%),
+    url("imgs/placeholder.jpg"); /* Placeholder to show the usage */
+    background-size: cover;
+    background-blend-mode: soft-light; /* Blend the gradient and the image */
+    mix-blend-mode: multiply; /* Blend the card with the parent container */
+}
+.attraction1{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .9) 30%, rgba(0, 0, 0, 0) 80%),
+    url("imgs/piran-8275931_1280.jpg");
+    background-position:0px 0px;
+}
+.attraction2{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .9) 30%, rgba(0, 0, 0, 0) 80%),
+    url("imgs/extreme-1355949_1280.jpg");
+}
+.attraction3{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .9) 30%, rgba(0, 0, 0, 0) 80%),
+    url("imgs/statue-4255695_1280.jpg");
+}
+
+.transport-card .taxi,.transport-card .rental,.transport-card .bus,.transport-card .shuttle{
+    background: linear-gradient(to top, rgba(0, 0, 0, .9) 30%, rgba(0, 0, 0, 0) 80%),
+    url("imgs/placeholder.jpg") ; /* Placeholder to show the usage */
+    background-size: cover;
+    background-blend-mode: soft-light; /* Blend the gradient and the image */
+    mix-blend-mode: multiply; /* Blend the card with the parent container */
+}
+.taxi{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0) 80%),
+    url("imgs/taxi-7855475_1280.jpg");
+    background-size: cover;
+    color:#fff!important;
+}
+
+.rental{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0) 80%),
+    url("imgs/car-7955720_1280.jpg");
+    background-size: cover;
+    color:#fff!important;
+}
+.bus{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0) 80%),
+    url("imgs/collective-435584_1280.jpg");
+    background-size: cover;
+    color:#fff!important;
+}
+.shuttle{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0) 80%),
+    url("imgs/bus-5589826_1280.jpg");
+    background-size: cover;
+    color:#fff!important;
+}

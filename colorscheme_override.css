@@ -1,0 +1,194 @@
+/* Override Color Scheme for Taniti Tourism Website */
+
+.header {
+    background-color: #0073e6; /* Ocean Blue */
+    color: white; /* Improve contrast */
+}
+
+.nav {
+    background-color: #333333; /* Charcoal */
+}
+
+.nav a {
+    color: white; /* Improve readability */
+}
+
+.hero {
+    background-color: #f4d03f; /* Sandy Yellow */
+    color: #fff; /* Ensure readable text */
+    padding: 40px 20px; /* Ensure consistent padding for hero sections */
+}
+.hero p {
+    background: linear-gradient(to bottom, #ffd54f, #40c4ff, #0288d1, #ffffff); /* Yellow, light blue, deep blue, and white */
+    -webkit-background-clip: text; /* Clip the gradient to the text */
+    -webkit-text-fill-color: transparent; /* Make the text fill transparent so the background shows through */
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7)!important; /* Add shadow for contrast */
+    font-size:20px!important;
+}
+
+
+
+
+/* Hero Colors for Different Pages */
+.about-page-hero {
+    background-color: #ffa500; /* Orange for About Page */
+    color: #333;
+}
+
+.attractions-page-hero {
+    background-color: #32cd32; /* Lime Green for Attractions Page */
+    color: #333;
+}
+
+.bookings-page-hero {
+    background-color: #ff6347; /* Tomato for Bookings Page */
+    color: #333;
+}
+
+.transport-page-hero {
+    background-color: #4682b4; /* Steel Blue for Transport Page */
+    color: #fff;
+}
+
+.highlight-card {
+    background-color: #2ecc71; /* Tropical Green */
+    color: white; /* Improve readability */
+    padding: 30px; /* Consistent padding for highlight cards */
+    border-radius: 8px; /* Ensures consistency across all highlight cards */
+    border: 1px solid #ccc; /* Match border style with other cards */
+}
+/*.highlight-card-attractions{ color: #efebcc;}
+.highlight-card-booking{color: #cbe6f4;}
+.highlight-card-travel{color: #99ccb9;}*/
+
+.cta-section {
+    background-color: #f4d03f; /* Sandy Yellow */
+    color: #333; /* Ensure readable text */
+    padding: 40px; /* Consistent padding for CTA sections */
+    border-radius: 8px; /* Add rounded corners for consistency */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: flex-start;
+    align-items: baseline;
+    height:220px;
+}
+
+.cta-button {
+    background-color: #0a5075; /* Ocean Blue */
+    color: white;
+    padding: 15px 30px; /* Ensure consistent button padding */
+    border-radius: 4px; /* Add rounded corners for uniform look */
+    margin-top:auto;
+    font-size:2.4em!important;
+}
+
+.cta-button:hover {
+    background-color: #005bb5; /* Darkened Blue */
+}
+
+.footer {
+    background-color: #333333; /* Charcoal */
+    color: white; /* Improve readability */
+    padding: 15px; /* Ensure consistent padding */
+}
+.footer a, .social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #f1cb47;
+}
+
+.testimonial-card {
+    background-color: #fafafa;
+    color: #555;
+    padding: 20px; /* Consistent padding for testimonial cards */
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.transport-card {
+    /*background-color: #e0e0e0;*/
+    padding: 20px; /* Consistent padding for transport cards */
+    border-radius: 8px;
+    border: 1px solid #ccc;
+
+}
+
+.booking-widget,
+.about-contact-section,
+.booking-section {
+    background-color: #fafafa;
+    color: #333;
+    padding: 20px; /* Consistent padding for booking and contact sections */
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.img-placeholder {
+    /*background-color: #e0e0e0;*/
+    /*color: #555;*/
+    text-align: center;
+    line-height: 180px;
+    font-size: 1.2em;
+    /*border: 1px dashed #aaa;*/
+}
+
+/* Additional Overrides for Attractions, Transport, and Other Pages */
+
+.attractions .highlight-card {
+    /*background-color: #2ecc71;  Tropical Green */
+    color: white; /* Improve readability */
+}
+
+.booking-section h2 {
+    color: #0073e6; /* Ocean Blue for headings */
+}
+
+.transportation-section .transport-card {
+    /*background-color: #e0e0e0;  Maintain consistency */
+
+}
+
+.contact-widget {
+    background-color: #fafafa; /* Consistent form background */
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.contact-widget button {
+    background-color: #0073e6; /* Ocean Blue for button consistency */
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-widget button:hover {
+    background-color: #005bb5; /* Darkened Blue for hover effect */
+}
+
+.attractions .img-placeholder,
+.transportation-section .img-placeholder {
+    /*background-color: #e0e0e0;*/
+/*color: #555;*/
+}
+.cta-section h2{font-size: 2em;}
+.cta-button{font-size: 3em;}
+
+
+.cta-button {
+    background-color: #FFA500; /* Bright Orange to make the button stand out */
+    color: #ffffff; /* White text for contrast */
+    padding: 15px 30px; /* Adequate padding for clickable space */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners for a friendly look */
+    font-size: 1.2em; /* Slightly larger font for emphasis */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth color transition on hover */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Add subtle shadow to text for extra contrast */
+}
+
